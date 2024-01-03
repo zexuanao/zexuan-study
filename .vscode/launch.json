@@ -6,7 +6,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "D:\\code\\cpp\\out.exe",
+            "program": "${fileDirname}\\out.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

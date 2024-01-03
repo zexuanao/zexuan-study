@@ -49,3 +49,14 @@ void ShowArray(T * arr[], int n) {
         cout << *arr[i] << ' ';
     cout << endl;
 }*/
+
+//这里用的都是void函数，如果要返回T a+T b的话不知道具体的
+//返回值是什么类型，所以可以
+/*
+templaie<class T1,class T2>
+aotu gt(T1 x,T2 y)->delltype(x+y)
+{
+    ...
+    return x+y;
+}
+*/
