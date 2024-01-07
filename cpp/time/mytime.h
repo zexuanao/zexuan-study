@@ -17,7 +17,7 @@ public:
     void Reset(int h = 0, int m = 0); // 重置时间
     Time operator+(const Time &t)const; // 重载加法运算符
     void Show() const; // 显示时间信息
-    friend void operator<<(std::ostream & os,const Time & t);
+    friend std::ostream & operator<<(std::ostream & os,const Time & t);
 };
 
 #endif

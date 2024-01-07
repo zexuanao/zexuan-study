@@ -12,7 +12,7 @@ int main() {
     Time coding(2, 40);
     Time fixing(5, 55);
     Time total;
-    cout<<coding;
+    cout<<coding<<std::endl<<fixing;
     /*cout << "planning time = ";
     planning.Show();
     cout << endl;

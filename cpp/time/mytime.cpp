@@ -41,7 +41,8 @@ void Time::Show() const {
     std::cout << "Hours: " << hours << ", Minutes: " << minutes << std::endl;
 }
 
-void operator<<(std::ostream & os,const Time & t)
+std::ostream & operator<<(std::ostream & os,const Time & t)
 {
     os<<t.hours<<" hours, "<<t.minutes<<" minutes";
+    return os;
 }
