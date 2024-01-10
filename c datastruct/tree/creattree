@@ -1,0 +1,32 @@
+//不要运行，没有写free函数
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef char TElemType; // 定义二叉树节点数据类型为字符类型
+
+typedef struct BiTNode {
+    TElemType data;
+    struct BiTNode *lchild, *rchild;
+} BiTNode, *BiTree;
+
+// 创建二叉树的函数
+void CreateBiTree(BiTree *T) {
+    TElemType ch;
+    scanf("%c", &ch);
+
+    if (ch == '#') {
+        *T = NULL; // 如果输入为 #，表示当前节点为空
+    } else {
+        *T = (BiTree)malloc(sizeof(BiTNode)); // 分配内存，创建新节点
+
+        if (!*T) {
+            exit(EXIT_FAILURE); // 内存分配失败，退出程序
+        }
+
+        (*T)->data = ch; // 将字符 ch 存储到当前节点的 data 中
+
+        // 递归构造左子树和右子树
+        CreateBiTree(&((*T)->lchild)); // 构造左子树
+        CreateBiTree(&((*T)->rchild)); // 构造右子树
+    }
+}

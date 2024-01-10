@@ -1,0 +1,19 @@
+/* 边表结点 */
+typedef struct EdgeNode {
+    int adjvex;          // 邻接点域，存储该顶点对应的下标
+    int weight;          // 用于存储权值，对于非网图可以不需要
+    struct EdgeNode *next;  // 链域，指向下一个邻接点
+} EdgeNode;
+
+/* 顶点表结点 */
+typedef struct VertexNode {
+    int in;              // 顶点入度
+    int data;            // 顶点域，存储顶点信息
+    EdgeNode *firstedge; // 边表头指针
+} VertexNode, AdjList[MAXVEX];  // 定义顶点表数组AdjList
+
+typedef struct {
+    AdjList adjList;     // 顶点表数组
+    int numVertexes;     // 图中当前顶点数
+    int numEdges;        // 图中当前边数
+} graphAdjList, *GraphAdjList;  // 图的邻接表结构

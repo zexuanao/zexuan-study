@@ -1,0 +1,23 @@
+﻿  menue.cpp
+  average.cpp
+  get_choice.cpp
+  dice_roll.cpp
+  s_gets.cpp
+  scan.cpp
+  rollem.cpp
+  sort_str.cpp
+D:\code\c datastruct\application\scan.cpp(22,17): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+  D:\code\c datastruct\application\scan.cpp(22,17):
+  占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+  D:\code\c datastruct\application\scan.cpp(22,17):
+  缺失的可变参数 2 为格式字符串“%c”所需
+  D:\code\c datastruct\application\scan.cpp(22,17):
+  此参数用作缓冲区大小
+  
+  dtob.cpp
+  to2.cpp
+  petclub.cpp
+  tree.cpp
+  正在生成代码...
+D:\code\c datastruct\application\s_gets.cpp(18): warning C4715: “s_gets”: 不是所有的控件路径都返回值
+  application.vcxproj -> D:\code\c datastruct\application\x64\Debug\application.exe
