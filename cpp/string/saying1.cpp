@@ -11,6 +11,7 @@ int main() {
     String name;
     cout << "Hi, what's your name? \n>> ";
     cin >> name;
+    //注意：这里的cin不是普通的cin，是String重载的，对最后的回车已经处理过了。
     cout << name << ", please enter up to " << ArSize << " short sayings (empty line to quit): \n";
     
     String sayings[ArSize];

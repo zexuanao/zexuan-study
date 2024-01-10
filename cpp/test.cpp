@@ -12,7 +12,10 @@ int main()
     char str[SIZE]="niha";
     left(str);
     left(str,2);
-    return 0;
+    
+    int a(89);
+    int b{89};
+    cout << a<<b;
 }
 void display(const string sa[],int n)
 {
