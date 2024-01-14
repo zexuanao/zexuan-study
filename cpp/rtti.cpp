@@ -71,7 +71,7 @@ int main() {
         cout << "Now processing type " << typeid(*pg).name() << "\n";
         pg->Speak();
 
-        if (ps = dynamic_cast<Superb*>(pg)) {
+        if (ps = dynamic_cast<Superb *>(pg)) {
             ps->Say();
         }
 
