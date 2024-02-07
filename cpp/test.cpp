@@ -1,43 +1,15 @@
-#include<fstream>
-
-#include<string>
-
-#include<cstdlib>
-
 #include<iostream>
 
+void print(){}
+
+template<typename T,typename... Types>
+void print(const T& firstArg,const Types&... args)
+{
+    cout << firstArg<<endl;
+    print(args...);
+}
 int main()
-
 {
-
-using namespace std;
-
-std::ofstream fout("test.txt",ios::out|ios::app);
-
-if(!fout.is_open())
-
-{
-
-cerr<<"can't open"<<"test.txt";
-
-exit(EXIT_FAILURE);
-
+    std::cout<< __cplusplus;
+    print(7.5,"hello",42);
 }
-
-string name;
-
-while(getline(cin,name)&&(name.size()>0))
-
-{
-
-fout<<name<<std::endl;
-
-}
-
-fout.close();
-
-return 0;
-
-}
-
-
