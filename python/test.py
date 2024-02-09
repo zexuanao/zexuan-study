@@ -1,3 +1,2 @@
-def hello():
-    print(hello)
-hello()
+with open(".\\a.txt") as f:
+    print(f.read())
