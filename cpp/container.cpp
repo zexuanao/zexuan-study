@@ -18,6 +18,10 @@ namespace np_vector
     void test_vector(const long& value);
     string get_a_target_string();
 }
+namespace np_list
+{
+    void test_list();
+} // namespace np_list
 
 
 
@@ -25,7 +29,7 @@ namespace np_vector
 int main()
 {   
     
-    np_vector::test_vector(ASIZE);
+    np_list::test_list();
     return 0;
 }
 
@@ -114,4 +118,27 @@ namespace np_vector
         return target;
     }
       
+}
+#include<list>
+namespace np_list
+{
+    void test_list()
+    {
+        cout<<"\ntest_list()......\n";
+    list<string>c;
+    clock_t timestart=clock();
+        srand(time(NULL));
+        for(long i=0;i<ASIZE;i++)
+            c.push_back(to_string(rand()));
+        cout<<"m-s: "<<(clock()-timestart)<<endl<<"list.size:"<<c.size()<<endl<<"list.max_size:"<<c.max_size()
+        <<endl<<"list.front"<<c.front()<<endl<<"list.back:"<<c.back()<<endl;
+    string target=np_vector::get_a_target_string();
+        timestart=clock();
+    auto pItem=::find(c.begin(),c.end(),target);
+        cout<<"::find m-s:"<<clock()-timestart<<endl;
+        if (pItem != c.end())
+        cout << "found " << *pItem << endl;
+    else
+        cout << "not found" << endl;
+    }
 }
