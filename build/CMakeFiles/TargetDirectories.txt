@@ -1,0 +1,3 @@
+D:/code/zexuan-study/build/CMakeFiles/out.dir
+D:/code/zexuan-study/build/CMakeFiles/edit_cache.dir
+D:/code/zexuan-study/build/CMakeFiles/rebuild_cache.dir

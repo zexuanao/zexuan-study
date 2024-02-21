@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/code/zexuan-study/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\out.dir\\recursion.cpp.obj -c D:\\code\\zexuan-study\\algorithm\\recursion.cpp",
+  "file": "D:/code/zexuan-study/algorithm/recursion.cpp",
+  "output": "CMakeFiles/out.dir/recursion.cpp.obj"
+}
+]
